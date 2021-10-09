@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/11_Header.png</file>
+        <file>images/12_Footer.png</file>
+        <file>images/14_Logo.png</file>
+        <file>images/15_Maps.png</file>
+        <file>images/16_Multimedia.png</file>
+        <file>images/17_Dashboard.png</file>
+        <file>images/18_Setting.png</file>
+        <file>images/19_Shadow.png</file>
+        <file>momiscreen.qml</file>
+        <file>DateBox.qml</file>
+    </qresource>
+</RCC>
