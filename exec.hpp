@@ -77,17 +77,8 @@ public:
     
     Q_INVOKABLE void runMomisetting() {
         QString program("systemctl");
-        QStringList mominavi = {"stop","mominavi"};
-        QStringList momiplay = {"stop","momiplay"};
-        QStringList momiradio = {"stop","momiradio"};
-        QStringList momisetting = {"start","momisetting"};
+        QStringList momisetting = {"start","mominjection"};
 
-        QProcess::start(program, mominavi);
-        QProcess::waitForFinished();
-        QProcess::start(program, momiplay);
-        QProcess::waitForFinished();
-        QProcess::start(program, momiradio);
-        QProcess::waitForFinished();
         QProcess::start(program, momisetting);
         QProcess::waitForFinished();
     }
