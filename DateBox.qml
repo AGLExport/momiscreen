@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0+
-// Copyright (C) 2021 AISIN CORPORATION
+// Copyright (C) 2024 Automotive Grade Linux
 
-import QtQuick 2.2
+import QtQuick
 
 Item {
     id: dateBox
@@ -28,6 +28,7 @@ Item {
         id: dateBoxText
         visible: true
         font.pixelSize: pixSize
+        font.bold: true
         color: timeColor
         horizontalAlignment: Text.AlignRight
         anchors.horizontalCenter: parent.horizontalCenter
