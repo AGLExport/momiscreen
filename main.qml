@@ -305,6 +305,8 @@ WaylandCompositor {
     }
 
     IviApplication {
+        property int defaultAppIviSurfaceIDpathcounter : 2010
+
         onIviSurfaceCreated: (iviSurface) =>  {
             var surfaceArea;
             var validValue = true;
@@ -327,7 +329,23 @@ WaylandCompositor {
                         "shellSurface": iviSurface,
                         z: 10
                     } );
-                item.handleResized();
+            }
+
+            if (iviSurface.iviId  === defaultAppIviSurfaceIDpathcounter) {
+                if (defaultAppIviSurfaceIDpathcounter === 2010) {
+                    mainScreenWindow.hideAppList();
+                    appLayer2010.showApp();
+                } else if (defaultAppIviSurfaceIDpathcounter === 2011) {
+                    mainScreenWindow.hideAppList();
+                    appLayer2011.showApp();
+                } else if (defaultAppIviSurfaceIDpathcounter === 2012) {
+                    mainScreenWindow.hideAppList();
+                    appLayer2012.showApp();
+                } else if (defaultAppIviSurfaceIDpathcounter === 2013) {
+                    mainScreenWindow.hideAppList();
+                    appLayer2013.showApp();
+                }
+
             }
         }
     }
